@@ -1,0 +1,5 @@
+*~
+.cvsignore
+_darcs
+CVS-x
+semantic.cache

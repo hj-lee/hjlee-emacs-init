@@ -12,6 +12,9 @@
 ;; (setq inferior-lisp-program "lisp") ;; cmu lisp
 ;; (setq inferior-lisp-program "clisp")
 
+(setq slime-net-coding-system 'utf-8-unix)
+
+
 (add-hook 'lisp-mode-hook (lambda () (slime-mode t)
 			    (local-set-key "\r" 'newline-and-indent)
 			    (setq lisp-indent-function 'common-lisp-indent-function)

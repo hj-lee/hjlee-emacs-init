@@ -30,18 +30,13 @@
 
 ;; (load-library "hjlee-init-cedet")
 
-;; (load-library "hjlee-init-jde")
+(load-library "hjlee-init-jde")
 
 ;(load-library "hjlee-init-ecb")
 
 ;(load-library "hjlee-init-follow-mouse")
 
 ;(load-library "hjlee-init-mswindows")
-
-;; emacs-21 has pcl-cvs
-(when (< emacs-major-version 21)
-  (load-library "hjlee-init-pcl-cvs")
-  )
 
 ;; (load-library "hjlee-init-darcs")
 
@@ -62,19 +57,18 @@
 
 (load-library "hjlee-init-git")
 
-
+(load-library "hjlee-init-ruby")
 
 ;; (load-library "keywiz")
 (require 'cl)
 
-(when (= emacs-major-version 22)
-  (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-  (define-key global-map "\C-cl" 'org-store-link)
-  (define-key global-map "\C-ca" 'org-agenda)
-  )
+;; (when (= emacs-major-version 22)
+;;   (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+;;   (define-key global-map "\C-cl" 'org-store-link)
+;;   (define-key global-map "\C-ca" 'org-agenda)
+;;   )
 
-(when (= emacs-major-version 22)
-  (load-library "hjlee-init-nxml"))
+;(load-library "hjlee-init-nxml")
 
 ;; (when (= emacs-major-version 22)
 ;;   (load-library "hjlee-init-emacs-rails"))
@@ -109,4 +103,3 @@ Prefix arg means just kill any existing server communications subprocess."
 (when is-gnu-emacs
   (global-font-lock-mode t))
 
-(load-library "hjlee-init-ruby")

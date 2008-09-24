@@ -62,6 +62,7 @@
 
 (load-library "hjlee-init-git")
 
+(load-library "hjlee-init-rinari")
 
 
 ;; (load-library "keywiz")
@@ -73,8 +74,7 @@
   (define-key global-map "\C-ca" 'org-agenda)
   )
 
-(when (= emacs-major-version 22)
-  (load-library "hjlee-init-nxml"))
+;;  (load-library "hjlee-init-nxml"))
 
 ;; (when (= emacs-major-version 22)
 ;;   (load-library "hjlee-init-emacs-rails"))

@@ -1,11 +1,3 @@
-;;;;;;;;;;;;;
-;;; cc-mode 5.28
-(when (< emacs-major-version 21)
-  (setq load-path (cons "~/usr/share/emacs/site-lisp/cc-mode" load-path))
-  )
-
-;;;;
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; c mode common hook
 

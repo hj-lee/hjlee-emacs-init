@@ -3,7 +3,7 @@
 ;;; jde 2.2.7.1
 
 
-(setq load-path (cons "~/usr/emacs-lisps/jde-2.3.5.1/lisp" load-path))
+(setq load-path (cons "~/usr/elisp/jde-2.3.5.1/lisp" load-path))
 
 (require 'jde)
 

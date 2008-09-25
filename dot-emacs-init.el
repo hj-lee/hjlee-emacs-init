@@ -30,8 +30,6 @@
 
 ;; (load-library "hjlee-init-cedet")
 
-(load-library "hjlee-init-jde")
-
 ;(load-library "hjlee-init-ecb")
 
 ;(load-library "hjlee-init-follow-mouse")
@@ -70,8 +68,6 @@
 ;;   (define-key global-map "\C-cl" 'org-store-link)
 ;;   (define-key global-map "\C-ca" 'org-agenda)
 ;;   )
-
-;;  (load-library "hjlee-init-nxml"))
 
 ;; (when (= emacs-major-version 22)
 ;;   (load-library "hjlee-init-emacs-rails"))

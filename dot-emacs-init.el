@@ -61,6 +61,8 @@
 
 (load-library "hjlee-init-ruby")
 
+(load-library "hjlee-init-clojure")
+
 
 ;; (load-library "keywiz")
 (require 'cl)

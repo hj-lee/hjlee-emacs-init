@@ -11,5 +11,5 @@
 (autoload 'git-blame-mode "git-blame"
   "Minor mode for incremental blame for Git." t)
 
-;; (add-to-list 'load-path "~/usr/elisp/git-emacs")
+;; (add-to-list 'load-path "~hjlee/usr/elisp/git-emacs")
 ;; (require 'git-emacs)

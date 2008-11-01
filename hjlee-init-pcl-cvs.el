@@ -12,7 +12,7 @@
 
 ;; pcl-cvs in debian is out of date(2.0b2)
 ;; pcl-cvs 2.9.9
-(setq load-path (append (list "~/usr/share/emacs/site-lisp/pcl-cvs")
+(setq load-path (append (list "~hjlee/usr/share/emacs/site-lisp/pcl-cvs")
 						load-path))
 
 

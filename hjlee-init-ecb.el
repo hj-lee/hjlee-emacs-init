@@ -4,7 +4,7 @@
 ;;;   Author: Hwi-Jae. Lee. 
 ;;;
 
-(setq load-path (cons "~/usr/share/emacs/site-lisp/ecb" load-path))
+(setq load-path (cons "~hjlee/usr/share/emacs/site-lisp/ecb" load-path))
 
 (require 'ecb)
 

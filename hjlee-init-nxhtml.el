@@ -3,7 +3,7 @@
 ;;;   Author: Hwi-Jae. Lee. 
 ;;;
 
-(load "~/usr/elisp/nxhtml/autostart.el")
+(load "~hjlee/usr/elisp/nxhtml/autostart.el")
 
 (setq
  nxhtml-global-minor-mode t

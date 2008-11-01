@@ -8,7 +8,7 @@
 ;; now 1.2.2 in debian package.(2001.4.23)
 
 
-; (setq load-path (cons "~/usr/share/emacs/site-lisp/psgml" load-path))
+; (setq load-path (cons "~hjlee/usr/share/emacs/site-lisp/psgml" load-path))
 
 ; (autoload 'sgml-mode "psgml" "Major mode to edit SGML files." t)
 ; (autoload 'xml-mode "psgml" "Major mode to edit XML files." t)
@@ -59,7 +59,7 @@
 
 ;; debian default package
 
-;; (setq load-path (cons "~/usr/share/emacs/site-lisp/tdtd" load-path))
+;; (setq load-path (cons "~hjlee/usr/share/emacs/site-lisp/tdtd" load-path))
 
 ;; ;; Start DTD mode for editing SGML-DTDs
 ;; (autoload 'dtd-mode "tdtd" "Major mode for SGML and XML DTDs.")

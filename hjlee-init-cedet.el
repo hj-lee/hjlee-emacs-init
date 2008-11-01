@@ -4,15 +4,15 @@
 ;;;   Author: Hwi-Jae. Lee. 
 ;;;
 
-;;(setq load-path (cons "~/usr/share/emacs/site-lisp/semantic" load-path))
+;;(setq load-path (cons "~hjlee/usr/share/emacs/site-lisp/semantic" load-path))
 
-;;(setq load-path (cons "~/usr/share/emacs/site-lisp/speedbar" load-path))
+;;(setq load-path (cons "~hjlee/usr/share/emacs/site-lisp/speedbar" load-path))
 
-;;(setq load-path (cons "~/usr/share/emacs/site-lisp/eieio" load-path))
+;;(setq load-path (cons "~hjlee/usr/share/emacs/site-lisp/eieio" load-path))
 
-;;(setq load-path (cons "~/usr/share/emacs/site-lisp/COGRE" load-path))
+;;(setq load-path (cons "~hjlee/usr/share/emacs/site-lisp/COGRE" load-path))
 
-;;(setq load-path (cons "~/usr/share/emacs/site-lisp/EDE" load-path))
+;;(setq load-path (cons "~hjlee/usr/share/emacs/site-lisp/EDE" load-path))
 
 ; not yet
 ;(require 'ede)

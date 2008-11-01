@@ -5,7 +5,7 @@
 
 ;; (add-to-list 'load-path (expand-file-name "~hjlee/usr/share/emacs/site-lisp/slime-cvs"))
 
-(add-to-list 'load-path "~/usr/elisp/slime")
+(add-to-list 'load-path "~hjlee/usr/elisp/slime")
 
 (require 'slime)
 

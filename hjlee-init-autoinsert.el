@@ -2,7 +2,7 @@
 (setq auto-insert 'not-modified)
 (setq auto-insert-query nil)
 
-(setq auto-insert-directory "~/autoinsert/")
+(setq auto-insert-directory "~hjlee/autoinsert/")
 
 (setq auto-insert-alist '(("\\.c$" . "initial.c")
                           ("\\.cc$" . "initial.c")

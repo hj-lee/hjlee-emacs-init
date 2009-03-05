@@ -4,8 +4,8 @@
 ;;;   Author: Hwi-Jae. Lee. 
 ;;;
 
-(require 'ruby-electric)
-(add-hook 'ruby-mode-hook 'ruby-electric-mode)
+;; (require 'ruby-electric)
+;; (add-hook 'ruby-mode-hook 'ruby-electric-mode)
 
 ;; (load-library "rdebug")
 

@@ -7,7 +7,7 @@
 (add-to-list 'load-path "~hjlee/usr/elisp/slime")
 (add-to-list 'load-path "~hjlee/usr/elisp/swank-clojure")
 
-(require 'clojure-auto)
+;(require 'clojure-auto)
 
 (require 'slime)
 (slime-setup)

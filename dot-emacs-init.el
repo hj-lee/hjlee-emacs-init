@@ -10,6 +10,7 @@
 ;;    bdf-directory-list)
 ;;   (load-library "hjlee-init-emacs22"))
 
+(push "~hjlee/usr/elisp/misc" load-path)
 
 (unless (boundp 'debian-emacs-flavor)
   (load-library "hjlee-init-read-debian"))
@@ -50,8 +51,6 @@
 
 (load-library "hjlee-init-timestamp")
 
-;; (load-library "hjlee-init-ilisp")
-(load-library "hjlee-init-slime")
 
 (load-library "hjlee-init-git")
 
@@ -61,7 +60,12 @@
 
 (load-library "hjlee-init-ruby")
 
+;; (load-library "hjlee-init-ilisp")
+;; (load-library "hjlee-init-slime")
+
 (load-library "hjlee-init-clojure")
+
+(load-library "hjlee-init-hunspell-ko")
 
 
 ;; (load-library "keywiz")

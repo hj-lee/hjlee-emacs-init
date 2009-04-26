@@ -8,8 +8,8 @@
 (if (>= emacs-major-version 23)
     (setq ispell-local-dictionary-alist
 	  '(("korean"
-	     "[가-힟]"
-	     "[^가-힟]"
+	     "[가-힣]"
+	     "[^가-힣]"
 	     "" nil
 	     ("-d" "/usr/share/myspell/dicts/ko_KR")
 	     nil utf-8)))

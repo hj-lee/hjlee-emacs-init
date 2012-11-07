@@ -41,7 +41,8 @@ See the documentation of `diary-date-forms' for an explanation.")
   (setq european-calendar-style nil)
   (setq calendar-date-display-form korean-calendar-display-form)
   (setq diary-date-forms korean-date-diary-pattern)
-  (update-calendar-mode-line))
+  ;; (update-calendar-mode-line)
+)
 
 ;;;
 ;;; re-defun calendar-date-string

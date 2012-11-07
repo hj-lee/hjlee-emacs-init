@@ -6,15 +6,6 @@
 ; use custom
 (set-language-environment "Korean")
 
-;;; for apps other than hanterm
-;(when is-gnu-emacs
-;  (set-clipboard-coding-system 'ctext))
-;(when is-gnu-emacs
-;  (set-clipboard-coding-system 'euc-kr))
-
-;;; for hanterm
-;(set-clipboard-coding-system 'euc-kr)
-
 ;;; for gnus mail writer
 (put-charset-property 'korean-ksc5601 'preferred-coding-system 'euc-kr)
 

@@ -39,8 +39,7 @@
 ;;;;
 (if is-gnu-emacs
     (global-set-key [C-f7] 'compile)
-  (global-set-key '(control f7) 'compile)
-  )
+  (global-set-key '(control f7) 'compile))
 
 
 ;; (when

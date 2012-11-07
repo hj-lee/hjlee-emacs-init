@@ -1,4 +1,4 @@
-;;; -*-mode: emacs-lisp; coding:euc-kr;-*-
+;;; -*-mode: emacs-lisp; coding:utf-8;-*-
 
 ;;;;
 ;; hj-insert-time-stamp
@@ -36,11 +36,11 @@
 	  (cdr
 	   (assoc
 	    dayname
-	    '(("Sun" . "ÀÏ") ("Mon" . "¿ù") ("Tue" . "È­") ("Wed" . "¼ö")
-	      ("Thu" . "¸ñ") ("Fri" . "±İ") ("Sat" . "Åä")))))
+	    '(("Sun" . "ì¼") ("Mon" . "ì›”") ("Tue" . "í™”") ("Wed" . "ìˆ˜")
+	      ("Thu" . "ëª©") ("Fri" . "ê¸ˆ") ("Sat" . "í† ")))))
 	 (hj-date-string (concat year "." month "." day " " dayname-kr)))
     (insert-string hj-date-string)
-    (insert-string "\n=============\nÃâ±Ù(")
+    (insert-string "\n=============\nì¶œê·¼(")
     
     (insert-string (substring time 11 16))
     (insert-string ")\n")))
@@ -70,10 +70,10 @@
 	  (cdr
 	   (assoc
 	    dayname
-	    '(("Sun" . "ÀÏ") ("Mon" . "¿ù") ("Tue" . "È­") ("Wed" . "¼ö")
-	      ("Thu" . "¸ñ") ("Fri" . "±İ") ("Sat" . "Åä")))))
-	 (hj-date-string (concat year "³â " month "¿ù " day "ÀÏ " 
-				 dayname-kr "¿äÀÏ")))
+	    '(("Sun" . "ì¼") ("Mon" . "ì›”") ("Tue" . "í™”") ("Wed" . "ìˆ˜")
+	      ("Thu" . "ëª©") ("Fri" . "ê¸ˆ") ("Sat" . "í† ")))))
+	 (hj-date-string (concat year "ë…„ " month "ì›” " day "ì¼ " 
+				 dayname-kr "ìš”ì¼")))
     (insert-string hj-date-string)
     (insert-string "\n\n")))
     

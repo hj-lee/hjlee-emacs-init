@@ -21,33 +21,19 @@
 
 (load-library "hjlee-init-basic-keybinding")
 
-;; (load-library "hjlee-init-gnus-bbdb")
-
 (load-library "hjlee-init-cc-mode")
 
-;; (load-library "hjlee-init-psgml-tdtd")
-
-;; (load-library "hjlee-init-python")
-
-;; (load-library "hjlee-init-cedet")
+(load-library "hjlee-init-psgml-tdtd")
 
 ;(load-library "hjlee-init-ecb")
 
-;(load-library "hjlee-init-follow-mouse")
-
 ;(load-library "hjlee-init-mswindows")
-
-;; (load-library "hjlee-init-darcs")
-
-(load-library "hjlee-init-www")
 
 (load-library "hjlee-init-autoinsert")
 
 (load-library "hjlee-init-my-initial")
 
-(when (< emacs-major-version 22)
-  (load-library "hjlee-init-calendar")
-  )
+(load-library "hjlee-init-calendar")
 
 (load-library "hjlee-init-timestamp")
 

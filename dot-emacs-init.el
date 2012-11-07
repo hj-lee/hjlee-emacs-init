@@ -56,17 +56,28 @@
 
 (load-library "hjlee-init-nxhtml")
 
-(load-library "hjlee-init-rinari")
+;; (load-library "hjlee-init-rinari")
 
 (load-library "hjlee-init-ruby")
 
 ;; (load-library "hjlee-init-ilisp")
-;; (load-library "hjlee-init-slime")
+(load-library "hjlee-init-slime")
 
-(load-library "hjlee-init-clojure")
+;; (load-library "hjlee-init-clojure")
 
-(load-library "hjlee-init-hunspell-ko")
+(load-library "hjlee-init-org-mode")
 
+;;;;
+;;;; yasnippet 
+;;;;
+
+(load-library "hjlee-init-yasnippet")
+
+;; (load-library "hjlee-init-scala")
+
+;; (load-library "hjlee-init-hunspell-ko")
+
+(require 'autotest)
 
 ;; (load-library "keywiz")
 (require 'cl)

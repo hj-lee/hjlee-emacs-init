@@ -23,3 +23,6 @@
 	     nil utf-8))))
 
 (setq ispell-dictionary "korean")
+
+;; (setq ispell-program-name "hunspell") 
+;; (setq ispell-dictionary "english")	

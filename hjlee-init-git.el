@@ -4,10 +4,13 @@
 ;;;   Author: Hwi-Jae. Lee. 
 ;;;
 
-(add-to-list 'load-path "~hjlee/usr/elisp/git-contrib-emacs")
-(require 'git)
-(autoload 'git-blame-mode "git-blame"
-  "Minor mode for incremental blame for Git." t)
+(add-to-list 'load-path "~hjlee/usr/elisp/magit")
+(require 'magit)
 
-;; (add-to-list 'load-path "~hjlee/usr/elisp/git-emacs")
-;; (require 'git-emacs)
+;; (add-to-list 'load-path "~hjlee/usr/elisp/git-contrib-emacs")
+;; (require 'git)
+;; (autoload 'git-blame-mode "git-blame"
+;;   "Minor mode for incremental blame for Git." t)
+
+;; ;; (add-to-list 'load-path "~hjlee/usr/elisp/git-emacs")
+;; ;; (require 'git-emacs)

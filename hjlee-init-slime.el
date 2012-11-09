@@ -5,8 +5,25 @@
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "sbcl")
 
+(slime-setup '(slime-fancy slime-asdf slime-banner))
 
 (load "~/quicklisp/clhs-use-local.el" t)
+
+;;; paredit
+
+(require 'paredit)
+
+;;; reshank
+
+;; (add-to-list 'load-path "~hjlee/usr/elisp/redshank")
+(require 'redshank-loader
+	 "~hjlee/usr/elisp/redshank/redshank-loader")
+
+(eval-after-load "redshank-loader"
+  `(redshank-setup '(lisp-mode-hook
+		     slime-repl-mode-hook) t))
+
+(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
 
 
 ;; ;; (add-to-list 'load-path "~hjlee/usr/elisp/slime")
@@ -111,4 +128,3 @@
 ;;   (backward-sexp arg))
 
 ;; (hj.d.lee:set-lisp-maps (kbd "M-_") 'mb:unwrap-next-sexp)
-

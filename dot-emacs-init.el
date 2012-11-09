@@ -10,6 +10,8 @@
 ;;    bdf-directory-list)
 ;;   (load-library "hjlee-init-emacs22"))
 
+(require 'cl)
+
 (push "~hjlee/usr/elisp/misc" load-path)
 
 (unless (boundp 'debian-emacs-flavor)
@@ -54,19 +56,18 @@
 (load-library "hjlee-init-org-mode")
 
 ;;;;
-;;;; yasnippet 
+;;;; yasnippet - use emacs24's package manager
 ;;;;
 
-(load-library "hjlee-init-yasnippet")
+;; (load-library "hjlee-init-yasnippet")
 
 ;; (load-library "hjlee-init-scala")
 
 ;; (load-library "hjlee-init-hunspell-ko")
 
-(require 'autotest)
-
 ;; (load-library "keywiz")
-(require 'cl)
+
+(require 'autotest)
 
 ;; (when (= emacs-major-version 22)
 ;;   (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))

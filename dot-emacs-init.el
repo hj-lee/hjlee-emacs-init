@@ -39,12 +39,9 @@
 
 (load-library "hjlee-init-timestamp")
 
-
 (load-library "hjlee-init-git")
 
 (load-library "hjlee-init-nxhtml")
-
-;; (load-library "hjlee-init-rinari")
 
 (load-library "hjlee-init-ruby")
 

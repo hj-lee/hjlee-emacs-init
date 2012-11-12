@@ -5,13 +5,56 @@
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "sbcl")
 
-(slime-setup '(slime-fancy slime-asdf slime-banner))
+(slime-setup '(slime-fancy slime-asdf))
 
 (load "~/quicklisp/clhs-use-local.el" t)
 
 ;;; paredit
 
 (require 'paredit)
+
+;;; 
+
+(defun override-slime-repl-bindings-with-paredit ()
+  (define-key slime-repl-mode-map
+    (read-kbd-macro paredit-backward-delete-key) nil))
+(add-hook 'slime-repl-mode-hook 'override-slime-repl-bindings-with-paredit)
+
+
+;; (defvar electrify-return-match
+;;   "[\]}\)\"]"
+;;   "If this regexp matches the text after the cursor, do an \"electric\"
+;; return.")
+
+;; (defun electrify-return-if-match (arg)
+;;   "If the text after the cursor matches `electrify-return-match' then
+;; open and indent an empty line between the cursor and the text.  Move the
+;; cursor to the new line."
+;;   (interactive "P")
+;;   (let ((case-fold-search nil))
+;;     (if (looking-at electrify-return-match)
+;; 	(save-excursion (newline-and-indent)))
+;;     (newline arg)
+;;     (indent-according-to-mode)))
+
+;; (defun my-lisp-related-hook ()
+;;   (paredit-mode +1)
+;;   (local-set-key (kbd "RET") 'electrify-return-if-match))
+
+(custom-set-variables
+ '(slime-complete-symbol*-fancy t)
+ '(slime-complete-symbol-function 'slime-complete-symbol*))
+
+
+(defun my-lisp-related-hook ()
+  (paredit-mode +1)
+  (setq indent-tabs-mode nil)
+  (local-set-key (kbd "RET") 'paredit-newline))
+
+
+(add-hook 'emacs-lisp-mode-hook 'my-lisp-related-hook)
+(add-hook 'lisp-mode-hook 'my-lisp-related-hook)
+(add-hook 'slime-repl-mode-hook 'my-lisp-related-hook)
 
 ;;; reshank
 
@@ -23,7 +66,9 @@
   `(redshank-setup '(lisp-mode-hook
 		     slime-repl-mode-hook) t))
 
-(add-hook 'emacs-lisp-mode-hook 'paredit-mode)
+
+;;;;
+
 
 
 ;; ;; (add-to-list 'load-path "~hjlee/usr/elisp/slime")

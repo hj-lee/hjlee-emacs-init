@@ -9,7 +9,7 @@
   (global-set-key [end] 'end-of-line)
   )
 
-(setq f1-function 'where-is)
+;; (setq f1-function 'where-is)
 (setq f2-function 'find-file)
 (setq f3-function 'other-window)
 (setq f4-function 'delete-other-windows)
@@ -17,7 +17,7 @@
 (setq f6-function 'switch-to-buffer)
 (setq f7-function 'switch-to-buffer-other-frame)
 (setq f8-function 'find-file-other-frame)
-(setq f9-function 'other-frame)
+;; (setq f9-function 'other-frame)
 (setq f10-function 'goto-line)
 (setq f11-function 'new-frame)
 (setq f12-function 'delete-frame)

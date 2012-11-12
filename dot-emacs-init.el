@@ -25,12 +25,6 @@
 
 (load-library "hjlee-init-cc-mode")
 
-(load-library "hjlee-init-psgml-tdtd")
-
-;(load-library "hjlee-init-ecb")
-
-;(load-library "hjlee-init-mswindows")
-
 (load-library "hjlee-init-autoinsert")
 
 (load-library "hjlee-init-my-initial")
@@ -41,41 +35,17 @@
 
 (load-library "hjlee-init-git")
 
-(load-library "hjlee-init-nxhtml")
+;; (load-library "hjlee-init-nxhtml")
 
 (load-library "hjlee-init-ruby")
 
-;; (load-library "hjlee-init-ilisp")
 (load-library "hjlee-init-slime")
-
-;; (load-library "hjlee-init-clojure")
 
 (load-library "hjlee-init-org-mode")
 
-;;;;
-;;;; yasnippet - use emacs24's package manager
-;;;;
-
-;; (load-library "hjlee-init-yasnippet")
-
-;; (load-library "hjlee-init-scala")
-
 ;; (load-library "hjlee-init-hunspell-ko")
 
-;; (load-library "keywiz")
-
 (require 'autotest)
-
-;; (when (= emacs-major-version 22)
-;;   (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-;;   (define-key global-map "\C-cl" 'org-store-link)
-;;   (define-key global-map "\C-ca" 'org-agenda)
-;;   )
-
-;; (when (= emacs-major-version 22)
-;;   (load-library "hjlee-init-emacs-rails"))
-
-
 
 ;; for experiment with emacs-cvs
 (let ((path "/usr/share/emacs/site-lisp/gnuserv"))
@@ -94,10 +64,6 @@ Prefix arg means just kill any existing server communications subprocess."
 
 (setq gnuserv-frame t)
 (gnuserv-start)
-
-;; (when is-gnu-emacs
-;;   (load-library "hjlee-init-mailcrypt"))
-
 
 ;;;;;;;;;;;;;
 ;;; emacs customize setting

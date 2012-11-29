@@ -4,15 +4,9 @@
 ;;;   Author: Hwi-Jae. Lee.
 ;;;
 
-;; (when (= emacs-major-version 22)
-;;   (push
-;;    (expand-file-name "fonts/bdf" "/mnt/archive/usr/emacs-fonts")
-;;    bdf-directory-list)
-;;   (load-library "hjlee-init-emacs22"))
-
 (require 'cl)
 
-(push "~hjlee/usr/elisp/misc" load-path)
+(load-library "hjlee-init-el-get")
 
 (unless (boundp 'debian-emacs-flavor)
   (load-library "hjlee-init-read-debian"))
@@ -33,19 +27,13 @@
 
 (load-library "hjlee-init-timestamp")
 
-(load-library "hjlee-init-git")
-
 ;; (load-library "hjlee-init-nxhtml")
-
-(load-library "hjlee-init-ruby")
 
 (load-library "hjlee-init-slime")
 
-(load-library "hjlee-init-org-mode")
+;; (load-library "hjlee-init-org-mode")
 
 ;; (load-library "hjlee-init-hunspell-ko")
-
-(require 'autotest)
 
 ;; for experiment with emacs-cvs
 (let ((path "/usr/share/emacs/site-lisp/gnuserv"))

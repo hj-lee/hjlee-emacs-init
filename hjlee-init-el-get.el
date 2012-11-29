@@ -14,7 +14,12 @@
     (eval-print-last-sexp)))
 
 ;; leave slime to be managed by quicklisp
-(setq my-packages
-      '(magit paredit nxhtml yasnippet redshank))
+(setq my:el-get-packages
+      '(magit
+        paredit
+        nxhtml
+        yasnippet
+        redshank
+        edit-server))
 
-(el-get 'sync my-packages)
+(el-get 'sync my:el-get-packages)

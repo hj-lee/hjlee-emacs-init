@@ -29,6 +29,12 @@
 
 (load-library "hjlee-init-slime")
 
+
+;;;; chromium browser edit plug-in
+(require 'edit-server)
+(edit-server-start)
+
+
 ;; (load-library "hjlee-init-hunspell-ko")
 
 ;; for experiment with emacs-cvs

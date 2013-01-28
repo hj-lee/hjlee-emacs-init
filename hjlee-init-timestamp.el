@@ -9,7 +9,7 @@
   (insert-string "(")
   (insert-string 
    (substring (current-time-string (current-time)) 11 16))
-  (insert-string ")\n" ))
+  (insert-string ") " ))
 
 (defun hj-insert-start-timestamp ()
   (interactive)
@@ -40,10 +40,10 @@
 	      ("Thu" . "목") ("Fri" . "금") ("Sat" . "토")))))
 	 (hj-date-string (concat year "." month "." day " " dayname-kr)))
     (insert-string hj-date-string)
-    (insert-string "\n=============\n출근(")
+    (insert-string "\n=============\n(")
     
     (insert-string (substring time 11 16))
-    (insert-string ")\n")))
+    (insert-string ") ")))
 
 (defun hj-insert-diary-date ()
   (interactive)

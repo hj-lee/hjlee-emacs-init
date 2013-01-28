@@ -29,13 +29,14 @@
 
 (load-library "hjlee-init-slime")
 
+(load-library "hjlee-init-python")
 
 ;;;; chromium browser edit plug-in
 (require 'edit-server)
 (edit-server-start)
 
-
 ;; (load-library "hjlee-init-hunspell-ko")
+(setq ispell-program-name "enchant") 
 
 ;; for experiment with emacs-cvs
 (let ((path "/usr/share/emacs/site-lisp/gnuserv"))

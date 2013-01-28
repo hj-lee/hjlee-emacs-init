@@ -20,6 +20,10 @@
         nxhtml
         yasnippet
         redshank
-        edit-server))
+        edit-server
+        yaml-mode
+        ;; auto-complete
+        python-mode
+        rope ropemacs ropemode pymacs))
 
 (el-get 'sync my:el-get-packages)

@@ -11,6 +11,10 @@
 (autoload 'pymacs-eval "pymacs" nil t)
 (autoload 'pymacs-exec "pymacs" nil t)
 (autoload 'pymacs-load "pymacs" nil t)
+
+;; to prevent annoying M-/ binding
+;; must be set before load ropemacs
+(setq ropemacs-enable-shortcuts nil)
 (pymacs-load "ropemacs" "rope-")
 (setq ropemacs-enable-autoimport t)
 

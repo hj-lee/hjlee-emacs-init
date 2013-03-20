@@ -17,13 +17,18 @@
 (setq my:el-get-packages
       '(magit
         paredit
-        nxhtml
+        ;; nxhtml
         yasnippet
         redshank
         edit-server
         yaml-mode
         ;; auto-complete
+        markdown-mode
         python-mode
-        rope ropemacs ropemode pymacs))
+        pymacs
+        rope
+        ropemacs
+        ropemode
+        ))
 
 (el-get 'sync my:el-get-packages)

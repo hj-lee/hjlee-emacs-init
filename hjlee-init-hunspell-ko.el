@@ -7,6 +7,7 @@
 (setq ispell-program-name "hunspell")
 (setq ispell-really-hunspell t)
 
+;; 사전 목록에 한국어("korean") 추가
 (if (>= emacs-major-version 23)
     (setq ispell-local-dictionary-alist
           '("korean"
@@ -23,4 +24,5 @@
              ("-d" "ko_KR")
              nil utf-8)))
 
+;; 한국어를 기본 사전으로 지정
 (setq ispell-dictionary "korean")

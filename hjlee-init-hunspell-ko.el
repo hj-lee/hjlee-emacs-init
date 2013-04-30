@@ -1,11 +1,9 @@
 ;;;
 ;;;   
 ;;;
-;;;   Author: Hwijae. Lee. 
+;;;   Author: Hwijae Lee. 
 ;;;
 
-;;
-;; (setq ispell-program-name "enchant")
 (setq ispell-program-name "hunspell")
 (setq ispell-really-hunspell t)
 
@@ -26,6 +24,3 @@
              nil utf-8)))
 
 (setq ispell-dictionary "korean")
-
-;; (setq ispell-program-name "hunspell") 
-;; (setq ispell-dictionary "english")	

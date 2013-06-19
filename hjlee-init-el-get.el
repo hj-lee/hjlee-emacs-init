@@ -29,6 +29,7 @@
         rope
         ropemacs
         ropemode
+        scala-mode
         ))
 
 (el-get 'sync my:el-get-packages)

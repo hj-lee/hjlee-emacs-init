@@ -14,8 +14,8 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-;; (setq el-get-recipe-path-emacswiki
-;;       "~/.emacs.d/el-get/el-get/recipes/emacswiki/")
+(setq el-get-recipe-path-emacswiki
+      "~/.emacs.d/el-get/el-get/recipes/emacswiki/")
 
 ;; ;; (push "~/.emacs.d/el-get-dev/recipes" el-get-recipe-path)
 ;; (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-dev/recipes")
@@ -35,11 +35,13 @@
         yaml-mode
         ;; auto-complete
         markdown-mode
+        ;;;; python 
         python-mode
         pymacs
         rope
         ropemacs
         ropemode
+        ;;;; scala
         scala-mode2
         ensime
         ))

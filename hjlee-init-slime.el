@@ -2,12 +2,12 @@
 ;;; slime
 
 
-(load (expand-file-name "~/quicklisp/slime-helper.el"))
+(load (expand-file-name "~hjlee/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "sbcl")
 
 (slime-setup '(slime-fancy slime-asdf))
 
-(load "~/quicklisp/clhs-use-local.el" t)
+(load "~hjlee/quicklisp/clhs-use-local.el" t)
 
 ;;; paredit
 

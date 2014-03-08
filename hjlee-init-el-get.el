@@ -4,7 +4,7 @@
 ;;;   Author: Hwi-Jae. Lee. 
 ;;;
 
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(add-to-list 'load-path "~hjlee/.emacs.d/el-get/el-get")
 
 
 (unless (require 'el-get nil 'noerror)
@@ -15,11 +15,11 @@
     (eval-print-last-sexp)))
 
 (setq el-get-recipe-path-emacswiki
-      "~/.emacs.d/el-get/el-get/recipes/emacswiki/")
+      "~hjlee/.emacs.d/el-get/el-get/recipes/emacswiki/")
 
-;; ;; (push "~/.emacs.d/el-get-dev/recipes" el-get-recipe-path)
-;; (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-dev/recipes")
-(add-to-list 'el-get-recipe-path "~/hjlee-emacs-init/el-get-recipes")
+;; ;; (push "~hjlee/.emacs.d/el-get-dev/recipes" el-get-recipe-path)
+;; (add-to-list 'el-get-recipe-path "~hjlee/.emacs.d/el-get-dev/recipes")
+(add-to-list 'el-get-recipe-path "~hjlee/hjlee-emacs-init/el-get-recipes")
 
 ;;
 

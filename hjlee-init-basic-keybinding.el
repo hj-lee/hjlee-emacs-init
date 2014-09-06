@@ -41,6 +41,8 @@
     (global-set-key [C-f7] 'compile)
   (global-set-key '(control f7) 'compile))
 
+(global-set-key (kbd "C-x g") 'magit-status)
+
 
 ;; (when
 ;;     window-system

@@ -44,6 +44,7 @@
         ;; ;;;; scala
         ;; scala-mode2
         ;; ensime
+        dtrt-indent
         ))
 
 (el-get 'sync my:el-get-packages)

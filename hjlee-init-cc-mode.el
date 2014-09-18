@@ -9,7 +9,7 @@
 
 ;;   (setq tab-width 8)
         ;; nil will make sure spaces are used instead of tabs
-  (setq indent-tabs-mode t)
+  (setq indent-tabs-mode nil)
   ;; keybindings for C, C++, and Objective-C.  We can put these in
   ;; c-mode-map because c++-mode-map and objc-mode-map inherit it
   ;(font-lock-mode 1)

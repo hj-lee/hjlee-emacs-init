@@ -4,7 +4,7 @@
 ;;;   Author: Hwi-Jae. Lee. 
 ;;;
 
-(add-to-list 'load-path "~hjlee/.emacs.d/el-get/el-get")
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 
 (unless (require 'el-get nil 'noerror)
@@ -15,11 +15,11 @@
     (eval-print-last-sexp)))
 
 (setq el-get-recipe-path-emacswiki
-      "~hjlee/.emacs.d/el-get/el-get/recipes/emacswiki/")
+      "~/.emacs.d/el-get/el-get/recipes/emacswiki/")
 
-;; ;; (push "~hjlee/.emacs.d/el-get-dev/recipes" el-get-recipe-path)
-;; (add-to-list 'el-get-recipe-path "~hjlee/.emacs.d/el-get-dev/recipes")
-(add-to-list 'el-get-recipe-path "~hjlee/hjlee-emacs-init/el-get-recipes")
+;; ;; (push "~/.emacs.d/el-get-dev/recipes" el-get-recipe-path)
+;; (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-dev/recipes")
+(add-to-list 'el-get-recipe-path "~/hjlee-emacs-init/el-get-recipes")
 
 ;;
 
@@ -27,23 +27,23 @@
 ;; leave slime to be managed by quicklisp
 (setq my:el-get-packages
       '(magit
-        paredit
+        ;; paredit
         ;; nxhtml
-        yasnippet
-        redshank
-        edit-server
-        yaml-mode
+        ;; yasnippet
+        ;; redshank
+        ;; edit-server
+        ;; yaml-mode
         ;; auto-complete
-        markdown-mode
-        ;;;; python 
-        python-mode
-        pymacs
-        rope
-        ropemacs
-        ropemode
-        ;;;; scala
-        scala-mode2
-        ensime
+        ;; markdown-mode
+        ;; ;;;; python 
+        ;; python-mode
+        ;; pymacs
+        ;; rope
+        ;; ropemacs
+        ;; ropemode
+        ;; ;;;; scala
+        ;; scala-mode2
+        ;; ensime
         ))
 
 (el-get 'sync my:el-get-packages)

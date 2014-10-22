@@ -35,9 +35,9 @@
 (require 'edit-server)
 (edit-server-start)
 
-(load-library "hjlee-init-hunspell-ko")
-;; (setq ispell-program-name "enchant") 
-;; (setq ispell-program-name "ispell") 
+;; (load-library "hjlee-init-hunspell-ko")
+;; ;; (setq ispell-program-name "enchant") 
+;; ;; (setq ispell-program-name "ispell") 
 
 ;; for experiment with emacs-cvs
 (let ((path "/usr/share/emacs/site-lisp/gnuserv"))

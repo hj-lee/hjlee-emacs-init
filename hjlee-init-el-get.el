@@ -14,19 +14,15 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-(setq el-get-recipe-path-emacswiki
-      "~hjlee/.emacs.d/el-get/el-get/recipes/emacswiki/")
+;; (setq el-get-recipe-path-emacswiki
+;;       "~hjlee/.emacs.d/el-get/el-get/recipes/emacswiki/")
 
-;; ;; (push "~hjlee/.emacs.d/el-get-dev/recipes" el-get-recipe-path)
-;; (add-to-list 'el-get-recipe-path "~hjlee/.emacs.d/el-get-dev/recipes")
-(add-to-list 'el-get-recipe-path "~hjlee/hjlee-emacs-init/el-get-recipes")
-
-;;
-
+;; (add-to-list 'el-get-recipe-path "~hjlee/hjlee-emacs-init/el-get-recipes")
 
 ;; leave slime to be managed by quicklisp
 (setq my:el-get-packages
-      '(magit
+      '(
+	magit
         paredit
         ;; nxhtml
         yasnippet
@@ -35,6 +31,7 @@
         yaml-mode
         ;; auto-complete
         markdown-mode
+        dtrt-indent
         ;;;; python 
         python-mode
         pymacs
@@ -44,7 +41,6 @@
         ;;;; scala
         scala-mode2
         ensime
-        dtrt-indent
         ))
 
 (el-get 'sync my:el-get-packages)

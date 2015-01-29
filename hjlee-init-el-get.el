@@ -41,6 +41,8 @@
         ;;;; scala
         scala-mode2
         ensime
+        ;;;; html
+        web-mode
         ))
 
 (el-get 'sync my:el-get-packages)

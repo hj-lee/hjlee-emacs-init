@@ -31,6 +31,8 @@
 
 (load-library "hjlee-init-python")
 
+(load-library "hjlee-init-web")
+
 ;;;; chromium browser edit plug-in
 (require 'edit-server)
 (edit-server-start)

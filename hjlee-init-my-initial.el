@@ -18,10 +18,10 @@
   (interactive)
   (let () 
     (beginning-of-buffer)
-    (next-line 2)
+    (next-line 1)
     (end-of-line)
     (insert "   ")
-    ;(insert (buffer-name))
+    (insert (buffer-name))
     ;(insert " : ")
     ))
 

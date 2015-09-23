@@ -8,7 +8,9 @@
 ;;   (setq c-cleanup-lisp '(defun-close-semi scope-operator))
 
 ;;   (setq tab-width 8)
-        ;; nil will make sure spaces are used instead of tabs
+  ;; nil will make sure spaces are used instead of tabs
+
+  
   (setq indent-tabs-mode nil)
   ;; keybindings for C, C++, and Objective-C.  We can put these in
   ;; c-mode-map because c++-mode-map and objc-mode-map inherit it
@@ -16,6 +18,7 @@
   ;; we like auto-newline and hungry-delete
   (c-toggle-auto-hungry-state 1)
   (setq c-echo-syntactic-information-p t)
+  
   )
 
 
@@ -52,7 +55,9 @@
 
 (add-hook 'c++-mode-hook
 	  (lambda () 
-	    (c-set-style "Stroustrup")))
+	    (c-set-style "Stroustrup")
+            (c-set-offset 'innamespace 0)
+            ))
 
 ;; (add-hook 'java-mode-hook
 ;; 	  (lambda ()

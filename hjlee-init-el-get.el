@@ -43,6 +43,12 @@
         ensime
         ;;;; html
         web-mode
+        ;;;; php
+        php-mode
+        php-mode-improved
+        php-completion
+        php-doc
+        php-eldoc
         ))
 
 (el-get 'sync my:el-get-packages)

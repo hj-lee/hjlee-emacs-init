@@ -57,6 +57,7 @@
 	  (lambda () 
 	    (c-set-style "Stroustrup")
             (c-set-offset 'innamespace 0)
+            (c-set-offset 'inline-open '=)
             ))
 
 ;; (add-hook 'java-mode-hook

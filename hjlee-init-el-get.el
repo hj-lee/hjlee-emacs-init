@@ -6,7 +6,6 @@
 
 (add-to-list 'load-path "~hjlee/.emacs.d/el-get/el-get")
 
-
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
       (url-retrieve-synchronously
@@ -22,6 +21,7 @@
 ;; leave slime to be managed by quicklisp
 (setq my:el-get-packages
       '(
+        ;; dash
 	magit
         paredit
         ;; nxhtml
@@ -41,14 +41,15 @@
         ;;;; scala
         scala-mode2
         ensime
-        ;;;; html
-        web-mode
         ;;;; php
         php-mode
         php-mode-improved
         php-completion
         php-doc
         php-eldoc
+        ;;;; html
+        mmm-mode
+        web-mode
         ))
 
 (el-get 'sync my:el-get-packages)

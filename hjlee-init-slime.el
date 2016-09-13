@@ -58,9 +58,9 @@
 
 ;;; reshank
 
-;; (add-to-list 'load-path "~hjlee/usr/elisp/redshank")
-(require 'redshank-loader
-	 "~hjlee/usr/elisp/redshank/redshank-loader")
+;; ;; (add-to-list 'load-path "~hjlee/usr/elisp/redshank")
+;; (require 'redshank-loader
+;; 	 "~hjlee/usr/elisp/redshank/redshank-loader")
 
 (eval-after-load "redshank-loader"
   `(redshank-setup '(lisp-mode-hook

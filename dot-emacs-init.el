@@ -6,7 +6,6 @@
 
 (require 'cl)
 
-(load-library "hjlee-init-el-get")
 
 (unless (boundp 'debian-emacs-flavor)
   (load-library "hjlee-init-read-debian"))
@@ -16,6 +15,10 @@
 (load-library "hjlee-init-basic-editing")
 
 (load-library "hjlee-init-basic-keybinding")
+
+;;;
+;; (load-library "hjlee-init-el-get")
+(load-library "hjlee-init-packages")
 
 (load-library "hjlee-init-cc-mode")
 
@@ -29,7 +32,7 @@
 
 (load-library "hjlee-init-slime")
 
-(load-library "hjlee-init-python")
+;; (load-library "hjlee-init-python")
 
 (load-library "hjlee-init-web")
 

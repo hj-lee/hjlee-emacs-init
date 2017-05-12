@@ -102,3 +102,24 @@
   ;; :pin melpa-stable
   )
 
+;;;;;;;;;;;;;;;;;;;
+
+(use-package groovy-mode
+  :ensure t
+  ;; :pin melpa-stable
+  )
+
+(use-package groovy-imports
+  :ensure t
+  ;; :pin melpa-stable
+  )
+
+(use-package gradle-mode
+  :ensure t
+  ;; :pin melpa-stable
+  )
+
+(use-package feature-mode
+  :ensure t
+  ;; :pin melpa-stable
+  )

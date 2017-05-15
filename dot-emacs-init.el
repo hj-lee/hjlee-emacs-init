@@ -36,6 +36,8 @@
 
 (load-library "hjlee-init-web")
 
+(load-library "hjlee-init-groovy")
+
 ;;;; chromium browser edit plug-in
 (require 'edit-server)
 (edit-server-start)

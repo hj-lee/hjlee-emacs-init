@@ -26,100 +26,84 @@
 (require 'diminish)
 (require 'bind-key)
 
+(setq use-package-always-ensure t)
 ;;;;;;;;;;;;;;;;
 
 (use-package magit
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package paredit
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package yasnippet
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package redshank
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package edit-server
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package yaml-mode
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package markdown-mode
-  :ensure t
   ;; :pin melpa-stable
   )
 
 ;;;; python
 
 (use-package python-mode
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package pymacs
-  :ensure t
   ;; :pin melpa-stable
   )
 
 ;;;; scala
 
 (use-package scala-mode
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package sbt-mode
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package ensime
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package web-mode
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package js2-mode
-  :ensure t
+  :mode "\\.js\\'"
   ;; :pin melpa-stable
   )
 
 ;;;;;;;;;;;;;;;;;;;
 
 (use-package groovy-mode
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package groovy-imports
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package gradle-mode
-  :ensure t
   ;; :pin melpa-stable
   )
 
 (use-package feature-mode
-  :ensure t
   ;; :pin melpa-stable
   )

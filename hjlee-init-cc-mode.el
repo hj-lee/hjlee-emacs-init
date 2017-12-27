@@ -7,11 +7,11 @@
   ;; error on java mode
 ;;   (setq c-cleanup-lisp '(defun-close-semi scope-operator))
 
-;;   (setq tab-width 8)
+  (setq tab-width 4)
   ;; nil will make sure spaces are used instead of tabs
 
   
-  (setq indent-tabs-mode nil)
+  (setq indent-tabs-mode t)
   ;; keybindings for C, C++, and Objective-C.  We can put these in
   ;; c-mode-map because c++-mode-map and objc-mode-map inherit it
   ;(font-lock-mode 1)

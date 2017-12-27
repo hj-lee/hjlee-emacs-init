@@ -41,9 +41,9 @@
   ;; :pin melpa-stable
   )
 
-(use-package redshank
-  ;; :pin melpa-stable
-  )
+;; (use-package redshank
+;;   ;; :pin melpa-stable
+;;   )
 
 (use-package edit-server
   ;; :pin melpa-stable
@@ -63,9 +63,9 @@
   ;; :pin melpa-stable
   )
 
-(use-package pymacs
-  ;; :pin melpa-stable
-  )
+;; (use-package pymacs
+;;   ;; :pin melpa-stable
+;;   )
 
 ;;;; scala
 

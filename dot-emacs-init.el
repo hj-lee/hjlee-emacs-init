@@ -41,6 +41,8 @@
 (load-library "hjlee-init-helm")
 (load-library "hjlee-init-helm-gtags")
 
+;; (load-library "hjlee-init-firacode")
+
 ;;;; chromium browser edit plug-in
 (require 'edit-server)
 (edit-server-start)

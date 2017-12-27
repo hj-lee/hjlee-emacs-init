@@ -38,6 +38,9 @@
 
 (load-library "hjlee-init-groovy")
 
+(load-library "hjlee-init-helm")
+(load-library "hjlee-init-helm-gtags")
+
 ;;;; chromium browser edit plug-in
 (require 'edit-server)
 (edit-server-start)

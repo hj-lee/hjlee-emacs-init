@@ -107,3 +107,8 @@
 (use-package feature-mode
   ;; :pin melpa-stable
   )
+
+(use-package helm
+  ;; :pin melpa-stable
+  )
+

@@ -112,3 +112,7 @@
   ;; :pin melpa-stable
   )
 
+(use-package kotlin-mode
+  ;; :pin melpa-stable
+  )
+

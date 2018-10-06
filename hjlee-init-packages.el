@@ -116,3 +116,28 @@
   ;; :pin melpa-stable
   )
 
+(use-package julia-mode
+  ;; :pin melpa-stable
+  )
+(use-package julia-repl
+  ;; :pin melpa-stable
+  )
+(use-package julia-shell
+  ;; :pin melpa-stable
+  )
+
+(use-package typescript-mode
+  ;; :pin melpa-stable
+  )
+
+(use-package rust-mode
+  ;; :pin melpa-stable
+  )
+
+(use-package rust-playground
+  ;; :pin melpa-stable
+  )
+
+(use-package rustic
+  ;; :pin melpa-stable
+  )

@@ -116,3 +116,41 @@
   ;; :pin melpa-stable
   )
 
+(use-package julia-mode
+  ;; :pin melpa-stable
+  )
+
+(use-package julia-repl
+  ;; :pin melpa-stable
+  )
+
+(use-package julia-shell
+  ;; :pin melpa-stable
+  )
+
+(use-package tide
+  ;; :pin melpa-stable
+  )
+
+(use-package rust-mode
+  ;; :pin melpa-stable
+  )
+
+;; (use-package spinner
+;;   ;; :pin melpa-stable
+;;   )
+
+;; (use-package lsp-mode
+;;   ;; :pin melpa-stable
+;;   )
+
+;; (use-package company-lsp
+;;   ;; :pin melpa-stable
+;;   )
+
+(use-package eglot
+  ;; :pin melpa-stable
+  )
+
+
+  

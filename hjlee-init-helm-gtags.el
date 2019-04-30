@@ -24,6 +24,7 @@
     (add-hook 'c++-mode-hook 'helm-gtags-mode)
     (add-hook 'asm-mode-hook 'helm-gtags-mode)
     (add-hook 'ruby-mode-hook 'helm-gtags-mode)
+    (add-hook 'emacs-lisp-mode-hook 'helm-gtags-mode)
     
     ;; key bindings
     (with-eval-after-load 'helm-gtags

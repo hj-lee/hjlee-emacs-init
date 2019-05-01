@@ -30,7 +30,7 @@
 
 (load-library "hjlee-init-timestamp")
 
-(load-library "hjlee-init-slime")
+;; (load-library "hjlee-init-slime")
 
 ;; (load-library "hjlee-init-python")
 

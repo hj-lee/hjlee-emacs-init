@@ -1,8 +1,5 @@
 ; ;(standard-display-ascii ?\r "")
 
-(quietly-read-abbrev-file)
-
-
 ;; diff-mode activation
 
 (when (< emacs-major-version 21)

@@ -12,9 +12,9 @@
 
 (load-library "hjlee-init-korean")
 
-(load-library "hjlee-init-basic-editing")
-
 (load-library "hjlee-init-basic-keybinding")
+
+(load-library "hjlee-init-basic-editing")
 
 ;;;
 ;; (load-library "hjlee-init-el-get")

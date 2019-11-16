@@ -6,10 +6,6 @@
 
 (require 'cl)
 
-
-(unless (boundp 'debian-emacs-flavor)
-  (load-library "hjlee-init-read-debian"))
-
 (load-library "hjlee-init-korean")
 
 (load-library "hjlee-init-basic-keybinding")

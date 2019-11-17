@@ -10,8 +10,3 @@
 
 (add-to-list 'auto-mode-alist 
 	     '("\\.h$" . c++-mode))
-
-(if is-gnu-emacs 
-    (when (= emacs-major-version 21)
-      (mouse-wheel-mode))
-  (mwheel-install))

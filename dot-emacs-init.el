@@ -51,6 +51,5 @@
 ;;;;;;;;;;;;;
 ;;; emacs customize setting
 
-(when is-gnu-emacs
-  (global-font-lock-mode t))
+(global-font-lock-mode t)
 

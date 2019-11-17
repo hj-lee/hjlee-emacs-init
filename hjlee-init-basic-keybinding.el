@@ -37,9 +37,7 @@
 (global-set-key [f12] f12-function)     ; F12
 
 ;;;;
-(if is-gnu-emacs
-    (global-set-key [C-f7] 'compile)
-  (global-set-key '(control f7) 'compile))
+(global-set-key [C-f7] 'compile)
 
 (global-set-key (kbd "C-x g") 'magit-status)
 

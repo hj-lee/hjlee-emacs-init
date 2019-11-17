@@ -45,9 +45,9 @@
 
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
 
-(if is-gnu-emacs 
-    (add-hook 'c-mode-common-hook 'my-c-mode-common-key-binding-for-gnu-emacs)
-  (add-hook 'c-mode-common-hook 'my-c-mode-common-key-binding-for-xemacs))
+
+(add-hook 'c-mode-common-hook 'my-c-mode-common-key-binding-for-gnu-emacs)
+
   
 (add-hook 'c-mode-hook 
 	  (lambda () 

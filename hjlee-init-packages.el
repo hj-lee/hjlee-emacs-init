@@ -134,6 +134,30 @@
   ;; :pin melpa-stable
   )
 
-(use-package rustic
+;; (use-package rustic
+;;   :pin melpa-stable
+;;   )
+
+;;;;;;;;;
+;; react
+
+(use-package web-mode
   ;; :pin melpa-stable
   )
+
+(use-package rjsx-mode
+  ;; :pin melpa-stable
+  )
+
+(use-package tide
+  ;; :pin melpa-stable
+  :ensure t
+  :after (typescript-mode company flycheck)
+  :hook ((typescript-mode . tide-setup)
+         (typescript-mode . tide-hl-identifier-mode)
+         (before-save . tide-format-before-save)))
+
+(use-package flycheck
+  ;; :pin melpa-stable
+  :ensure t
+  :init (global-flycheck-mode))

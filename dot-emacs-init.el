@@ -22,7 +22,7 @@
 
 (load-library "hjlee-init-my-initial")
 
-(load-library "hjlee-init-calendar")
+;; (load-library "hjlee-init-calendar")
 
 (load-library "hjlee-init-timestamp")
 

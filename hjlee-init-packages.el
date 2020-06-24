@@ -73,10 +73,6 @@
   ;; :pin melpa-stable
   )
 
-(use-package ensime
-  ;; :pin melpa-stable
-  )
-
 (use-package web-mode
   ;; :pin melpa-stable
   )

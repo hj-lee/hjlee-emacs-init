@@ -157,3 +157,11 @@
   ;; :pin melpa-stable
   :ensure t
   :init (global-flycheck-mode))
+
+(use-package cuda-mode
+  ;; :pin melpa-stable
+  )
+
+(use-package google-c-style
+  ;; :pin melpa-stable
+  )

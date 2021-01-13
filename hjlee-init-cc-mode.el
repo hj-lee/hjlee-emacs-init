@@ -49,15 +49,18 @@
 (add-hook 'c-mode-common-hook 'my-c-mode-common-key-binding-for-gnu-emacs)
 
   
-;; (add-hook 'c-mode-hook
-;; 	  (lambda ()
-;; 	    (c-set-style "Stroustrup")))
+(add-hook 'c-mode-hook
+	  (lambda ()
+	    ;; (c-set-style "Stroustrup")
+	    (google-set-c-style)
+	    ))
 
 (add-hook 'c++-mode-hook
 	  (lambda () 
 	    ;; (c-set-style "Stroustrup")
             (c-set-offset 'innamespace 0)
             (c-set-offset 'inline-open '=)
+	    (google-set-c-style)
             ))
 
 ;; (add-hook 'java-mode-hook

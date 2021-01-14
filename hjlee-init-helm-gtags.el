@@ -22,6 +22,7 @@
     ;; Enable helm-gtags-mode in languages that GNU Global supports
     (add-hook 'c-mode-hook 'helm-gtags-mode)
     (add-hook 'c++-mode-hook 'helm-gtags-mode)
+    (add-hook 'cuda-mode-hook 'helm-gtags-mode)
     (add-hook 'asm-mode-hook 'helm-gtags-mode)
     (add-hook 'ruby-mode-hook 'helm-gtags-mode)
     (add-hook 'emacs-lisp-mode-hook 'helm-gtags-mode)

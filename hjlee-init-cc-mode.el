@@ -61,6 +61,7 @@
             (c-set-offset 'innamespace 0)
             (c-set-offset 'inline-open '=)
 	    (google-set-c-style)
+	    (c-set-offset 'inlambda 0)
             ))
 
 ;; (add-hook 'java-mode-hook

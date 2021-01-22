@@ -56,13 +56,16 @@
 	    ))
 
 (defun my-c++-mode-hook ()
+  (google-set-c-style)
   (c-set-offset 'innamespace 0)
   (c-set-offset 'inline-open '=)
-  (google-set-c-style)
   (c-set-offset 'inlambda 0))  
 
 (add-hook 'c++-mode-hook 'my-c++-mode-hook)
-(add-hook 'cuda-mode-hook 'my-c++-mode-hook)
+(add-hook 'cuda-mode-hook
+	  (lambda ()
+	    (my-c++-mode-hook)
+	    ))
 
 ;; (add-hook 'java-mode-hook
 ;; 	  (lambda ()

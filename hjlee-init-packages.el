@@ -165,3 +165,7 @@
 (use-package google-c-style
   ;; :pin melpa-stable
   )
+
+(use-package swift-mode
+  ;; :pin melpa-stable
+  )

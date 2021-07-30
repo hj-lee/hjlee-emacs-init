@@ -59,9 +59,9 @@
   ;; :pin melpa-stable
   )
 
-(use-package pymacs
-  ;; :pin melpa-stable
-  )
+;; (use-package pymacs
+;;   ;; :pin melpa-stable
+;;   )
 
 ;;;; scala
 

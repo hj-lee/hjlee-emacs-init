@@ -4,7 +4,7 @@
 ;;;   Author: Hwi-Jae. Lee.
 ;;;
 
-(require 'cl)
+;; (require 'cl)
 
 (load-library "hjlee-init-korean")
 

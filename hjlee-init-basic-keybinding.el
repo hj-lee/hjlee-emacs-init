@@ -19,7 +19,7 @@
 (setq f8-function 'find-file-other-frame)
 ;; (setq f9-function 'other-frame)
 (setq f10-function 'goto-line)
-(setq f11-function 'new-frame)
+(setq f11-function 'make-frame)
 (setq f12-function 'delete-frame)
 
 ; (global-set-key [f1] f1-function)       ; F1

@@ -1,3 +1,4 @@
 *~
 /.emacs.desktop
 semantic.cache
+/local-custom.el

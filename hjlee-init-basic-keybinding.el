@@ -2,13 +2,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; key bindings
 
-;; emacs 21 default binding
-(when (< emacs-major-version 21)
-  (global-set-key [delete] 'delete-char)
-  (global-set-key [home] 'beginning-of-line)
-  (global-set-key [end] 'end-of-line)
-  )
-
 ;; (setq f1-function 'where-is)
 (setq f2-function 'find-file)
 (setq f3-function 'other-window)

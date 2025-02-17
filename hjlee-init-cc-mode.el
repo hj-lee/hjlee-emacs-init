@@ -74,9 +74,3 @@
 ;; 		  ;; nil will make sure spaces are used instead of tabs
 ;; 		  indent-tabs-mode nil)
 ;; 	    ))
-
-;;;;;
-;;;;;
-;;;;; MARK
-
-;; /home/hjlee/t3plandll/scpdll:/home/hjlee/t3plandll/atpdll:/home/hjlee/t3plandll/scmbaselib/models:/home/hjlee/t3plandll/scmbaselib/galib/ga

@@ -1,5 +1,5 @@
 ;;
-;; simlink or copy to ~/.emacs.el or ~/.emacs.d/init.el
+;; simlink or copy to ~/.emacs.el (preferred destination) or ~/.emacs.d/init.el
 
 
 (setq user-init-file (or load-file-name (buffer-file-name)))

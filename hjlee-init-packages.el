@@ -171,3 +171,7 @@
 (use-package swift-mode
   ;; :pin melpa-stable
   )
+
+(use-package scad-mode
+  ;; :pin melpa-stable
+  )

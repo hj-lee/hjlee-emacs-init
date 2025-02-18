@@ -43,6 +43,14 @@
 (add-hook 'after-init-hook #'elpaca-process-queues)
 (elpaca `(,@elpaca-order))
 
+
+;;;
+;;; Enable no-symlink-mode for windows
+
+(if (eq system-type 'windows-nt)
+    (elpaca-no-symlink-mode)
+)
+
 ;;;
 
 ;; Install use-package support

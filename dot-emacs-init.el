@@ -2,6 +2,8 @@
 ;;;   Author: Hwijae Lee
 ;;;
 
+;;;;
+
 (setq custom-file "~/hjlee-emacs-init/local-custom.el")
 (load custom-file t)
 
@@ -13,7 +15,7 @@
 
 (load-library "hjlee-init-basic-editing")
 
-(load-library "hjlee-init-packages")
+(load-library "hjlee-init-elpaca")
 
 ;;;;
 

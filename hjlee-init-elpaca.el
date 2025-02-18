@@ -63,70 +63,147 @@
 ;;; package list
 ;;;
 
-;; magit is dependant on transient
-(use-package transient  :ensure (:wait t) :demand t)
+(use-package paredit
+  :ensure t
+  ;; :ensure (:wait t) :demand t
+  )
 
-(use-package magit  :ensure (:wait t) :demand t)
+(use-package yasnippet
+  :ensure t
+  ;; :ensure (:wait t) :demand t
+  )
 
-(use-package paredit :ensure (:wait t) :demand t)
+(use-package redshank
+  :ensure t
+  ;; :ensure (:wait t) :demand t
+  )
 
-(use-package yasnippet :ensure (:wait t) :demand t)
+(use-package edit-server
+  :ensure t
+  ;; :ensure (:wait t) :demand t
+  )
 
-(use-package redshank :ensure (:wait t) :demand t)
+(use-package yaml-mode
+  :ensure t
+  ;; :ensure (:wait t) :demand t
+  )
 
-(use-package edit-server :ensure (:wait t) :demand t)
+(use-package markdown-mode
+  :ensure t
+  ;; :ensure (:wait t) :demand t
+  )
 
-(use-package yaml-mode :ensure (:wait t) :demand t)
+(use-package python-mode
+  :ensure t
+  ;; :ensure (:wait t) :demand t
+  )
+;; (use-package pymacs
+;; :ensure (:wait t) :demand t
+;; )
 
-(use-package markdown-mode :ensure (:wait t) :demand t)
 
-(use-package python-mode :ensure (:wait t) :demand t)
-;; (use-package pymacs :ensure (:wait t) :demand t)
+(use-package scala-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
+(use-package sbt-mode
+  :ensure t
+  ;; :ensure (:wait t) :demand t
+  )
 
-
-(use-package scala-mode :ensure (:wait t) :demand t)
-(use-package sbt-mode :ensure (:wait t) :demand t)
-
-(use-package web-mode :ensure (:wait t) :demand t)
-(use-package js2-mode :ensure (:wait t) :demand t
+(use-package web-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+  )
+(use-package js2-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
   :mode "\\.js\\'")
 
 ;;;;;;;;;;;;;;;;;;;
 
-(use-package groovy-mode :ensure (:wait t) :demand t)
+(use-package groovy-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package groovy-imports :ensure (:wait t) :demand t)
+(use-package groovy-imports
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package gradle-mode :ensure (:wait t) :demand t)
+(use-package gradle-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package feature-mode :ensure (:wait t) :demand t)
+(use-package feature-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package helm :ensure (:wait t) :demand t)
-(use-package helm-gtags :ensure (:wait t) :demand t)
+(use-package helm
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
+(use-package helm-gtags
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package kotlin-mode :ensure (:wait t) :demand t)
+(use-package kotlin-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package julia-mode :ensure (:wait t) :demand t)
-(use-package julia-repl :ensure (:wait t) :demand t)
-(use-package julia-shell :ensure (:wait t) :demand t)
+(use-package julia-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
+(use-package julia-repl
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
+(use-package julia-shell
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package typescript-mode :ensure (:wait t) :demand t)
+(use-package typescript-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package rust-mode :ensure (:wait t) :demand t)
+(use-package rust-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package rust-playground :ensure (:wait t) :demand t)
+(use-package rust-playground
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-;; (use-package rustic :ensure (:wait t) :demand t)
+;; (use-package rustic
+;; :ensure (:wait t) :demand t
+;; )
 
-(use-package flycheck :ensure (:wait t) :demand t
+(use-package flycheck
+  :ensure t
+;; :ensure (:wait t) :demand t
   :config (global-flycheck-mode))
 
 ;;;;;;;;;
 ;; react
 
-(use-package rjsx-mode :ensure (:wait t) :demand t)
+(use-package rjsx-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package tide :ensure (:wait t) :demand t
+(use-package tide
+  :ensure t
+;; :ensure (:wait t) :demand t
   :after (typescript-mode company flycheck)
   :hook ((typescript-mode . tide-setup)
          (typescript-mode . tide-hl-identifier-mode)
@@ -134,10 +211,39 @@
 
 ;;
 
-(use-package cuda-mode :ensure (:wait t) :demand t)
+(use-package cuda-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package google-c-style :ensure (:wait t) :demand t)
+(use-package google-c-style
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package swift-mode :ensure (:wait t) :demand t)
+(use-package swift-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
 
-(use-package scad-mode :ensure (:wait t) :demand t)
+(use-package scad-mode
+  :ensure t
+;; :ensure (:wait t) :demand t
+)
+
+;;; place transient and magit last
+;;;  with ensure (:wait t)
+
+;; magit is dependant on transient
+(use-package transient
+  ;; :ensure t
+  :ensure (:wait t) :demand t
+  )
+
+(use-package magit
+  ;; :ensure t
+  :ensure (:wait t) :demand t
+  )
+
+(elpaca-process-queues)
+

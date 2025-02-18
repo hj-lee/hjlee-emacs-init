@@ -62,148 +62,74 @@
 ;;;
 ;;; package list
 ;;;
+(defmacro my-use-package (name &rest args)
+  `(use-package ,name
+     :ensure t
+     ,@args))
 
-(use-package paredit
-  :ensure t
-  ;; :ensure (:wait t) :demand t
-  )
+;; macro test
+;(macroexpand-1 '(my-use-package paredit ))
+;(macroexpand-1 '(my-use-package js2-mode :mode "\\.js\\'"))
 
-(use-package yasnippet
-  :ensure t
-  ;; :ensure (:wait t) :demand t
-  )
+(my-use-package paredit)
 
-(use-package redshank
-  :ensure t
-  ;; :ensure (:wait t) :demand t
-  )
+(my-use-package yasnippet)
 
-(use-package edit-server
-  :ensure t
-  ;; :ensure (:wait t) :demand t
-  )
+(my-use-package redshank)
 
-(use-package yaml-mode
-  :ensure t
-  ;; :ensure (:wait t) :demand t
-  )
+(my-use-package edit-server)
 
-(use-package markdown-mode
-  :ensure t
-  ;; :ensure (:wait t) :demand t
-  )
+(my-use-package yaml-mode)
 
-(use-package python-mode
-  :ensure t
-  ;; :ensure (:wait t) :demand t
-  )
-;; (use-package pymacs
-;; :ensure (:wait t) :demand t
-;; )
+(my-use-package markdown-mode)
+
+(my-use-package python-mode)
+;; (my-use-package pymacs)
 
 
-(use-package scala-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
-(use-package sbt-mode
-  :ensure t
-  ;; :ensure (:wait t) :demand t
-  )
+(my-use-package scala-mode)
+(my-use-package sbt-mode)
 
-(use-package web-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-  )
-(use-package js2-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
+(my-use-package web-mode)
+(my-use-package js2-mode
   :mode "\\.js\\'")
 
 ;;;;;;;;;;;;;;;;;;;
 
-(use-package groovy-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package groovy-mode)
 
-(use-package groovy-imports
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package groovy-imports)
 
-(use-package gradle-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package gradle-mode)
 
-(use-package feature-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package feature-mode)
 
-(use-package helm
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
-(use-package helm-gtags
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package helm)
+(my-use-package helm-gtags)
 
-(use-package kotlin-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package kotlin-mode)
 
-(use-package julia-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
-(use-package julia-repl
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
-(use-package julia-shell
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package julia-mode)
+(my-use-package julia-repl)
+(my-use-package julia-shell)
 
-(use-package typescript-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package typescript-mode)
 
-(use-package rust-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package rust-mode)
 
-(use-package rust-playground
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package rust-playground)
 
-;; (use-package rustic
-;; :ensure (:wait t) :demand t
-;; )
+;; (my-use-package rustic)
 
-(use-package flycheck
-  :ensure t
-;; :ensure (:wait t) :demand t
+(my-use-package flycheck
   :config (global-flycheck-mode))
 
 ;;;;;;;;;
 ;; react
 
-(use-package rjsx-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package rjsx-mode)
 
-(use-package tide
-  :ensure t
-;; :ensure (:wait t) :demand t
+(my-use-package tide
   :after (typescript-mode company flycheck)
   :hook ((typescript-mode . tide-setup)
          (typescript-mode . tide-hl-identifier-mode)
@@ -211,25 +137,13 @@
 
 ;;
 
-(use-package cuda-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package cuda-mode)
 
-(use-package google-c-style
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package google-c-style)
 
-(use-package swift-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package swift-mode)
 
-(use-package scad-mode
-  :ensure t
-;; :ensure (:wait t) :demand t
-)
+(my-use-package scad-mode)
 
 ;;; place transient and magit last
 ;;;  with ensure (:wait t)

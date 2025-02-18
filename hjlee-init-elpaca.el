@@ -148,16 +148,22 @@
 ;;; place transient and magit last
 ;;;  with ensure (:wait t)
 
-;; magit is dependant on transient
-(use-package transient
-  ;; :ensure t
-  :ensure (:wait t) :demand t
-  )
+;;;; magit is dependant on newer transient
 
-(use-package magit
-  ;; :ensure t
-  :ensure (:wait t) :demand t
-  )
+;; (use-package transient
+;;   :ensure (:wait t) :demand t)
 
-(elpaca-process-queues)
+;; (use-package magit
+;;   ;; :ensure t
+;;   :ensure (:wait t) :demand t
+;;   )
+
+(my-use-package transient)
+
+(my-use-package magit
+  :after (transient))
+
+
+;;(elpaca-process-queues)
+(elpaca-wait)
 

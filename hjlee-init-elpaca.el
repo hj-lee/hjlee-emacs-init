@@ -56,7 +56,7 @@
 ;; Install use-package support
 (elpaca elpaca-use-package
   ;; Enable use-package :ensure support for Elpaca.
-	(elpaca-use-package-mode))
+  (elpaca-use-package-mode))
 
 
 ;;;
@@ -70,6 +70,14 @@
 ;; macro test
 ;(macroexpand-1 '(my-use-package paredit ))
 ;(macroexpand-1 '(my-use-package js2-mode :mode "\\.js\\'"))
+
+(my-use-package compat)
+(my-use-package transient)
+
+;;;; magit is dependant on newer transient and compat
+(my-use-package magit
+  :after (transient compat))
+
 
 (my-use-package paredit)
 
@@ -145,25 +153,6 @@
 
 (my-use-package scad-mode)
 
-;;; place transient and magit last
-;;;  with ensure (:wait t)
 
-;;;; magit is dependant on newer transient
-
-;; (use-package transient
-;;   :ensure (:wait t) :demand t)
-
-;; (use-package magit
-;;   ;; :ensure t
-;;   :ensure (:wait t) :demand t
-;;   )
-
-(my-use-package transient)
-
-(my-use-package magit
-  :after (transient))
-
-
-;;(elpaca-process-queues)
 (elpaca-wait)
 

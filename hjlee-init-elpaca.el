@@ -153,6 +153,10 @@
 
 (my-use-package scad-mode)
 
+(my-use-package mise
+ :config
+ (global-mise-mode))
+
 
 (elpaca-wait)
 

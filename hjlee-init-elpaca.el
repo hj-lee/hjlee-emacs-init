@@ -113,7 +113,7 @@
 (my-use-package feature-mode)
 
 (my-use-package helm)
-(my-use-package helm-gtags)
+;; (my-use-package helm-gtags)
 
 (my-use-package kotlin-mode)
 

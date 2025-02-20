@@ -26,7 +26,7 @@
 (load-library "hjlee-init-groovy")
 
 (load-library "hjlee-init-helm")
-(load-library "hjlee-init-helm-gtags")
+;; (load-library "hjlee-init-helm-gtags")
 
 ;;;;
 

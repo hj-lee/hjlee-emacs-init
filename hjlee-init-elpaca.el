@@ -60,84 +60,79 @@
 
 
 ;;;
+(setq use-package-always-ensure t)
+
+;;;
 ;;; package list
 ;;;
-(defmacro my-use-package (name &rest args)
-  `(use-package ,name
-     :ensure t
-     ,@args))
 
-;; macro test
-;(macroexpand-1 '(my-use-package paredit ))
-;(macroexpand-1 '(my-use-package js2-mode :mode "\\.js\\'"))
-
-(my-use-package compat)
-(my-use-package transient)
+(use-package compat)
+(use-package transient)
 
 ;;;; magit is dependant on newer transient and compat
-(my-use-package magit
+(use-package magit
   :after (transient compat))
 
 
-(my-use-package paredit)
+(use-package paredit)
 
-(my-use-package yasnippet)
+(use-package yasnippet)
 
-(my-use-package redshank)
+(use-package redshank)
 
-(my-use-package edit-server)
+(use-package edit-server)
 
-(my-use-package yaml-mode)
+(use-package yaml-mode)
 
-(my-use-package markdown-mode)
+(use-package markdown-mode)
 
-(my-use-package python-mode)
-;; (my-use-package pymacs)
+(use-package python-mode)
+;; (use-package pymacs)
 
 
-(my-use-package scala-mode)
-(my-use-package sbt-mode)
+(use-package scala-mode)
+(use-package sbt-mode)
 
-(my-use-package web-mode)
-(my-use-package js2-mode
+(use-package web-mode)
+(use-package js2-mode
   :mode "\\.js\\'")
 
 ;;;;;;;;;;;;;;;;;;;
 
-(my-use-package groovy-mode)
+(use-package groovy-mode)
 
-(my-use-package groovy-imports)
+(use-package groovy-imports)
 
-(my-use-package gradle-mode)
+(use-package gradle-mode)
 
-(my-use-package feature-mode)
+(use-package feature-mode)
 
-(my-use-package helm)
-;; (my-use-package helm-gtags)
+(use-package helm)
+;; (use-package helm-gtags)
 
-(my-use-package kotlin-mode)
+(use-package kotlin-mode)
 
-(my-use-package julia-mode)
-(my-use-package julia-repl)
-(my-use-package julia-shell)
+(use-package julia-mode)
+(use-package julia-repl)
+(use-package julia-shell)
 
-(my-use-package typescript-mode)
+(use-package typescript-mode)
 
-(my-use-package rust-mode)
+(use-package rust-mode)
 
-(my-use-package rust-playground)
+(use-package rust-playground)
 
-;; (my-use-package rustic)
+;; (use-package rustic)
 
-(my-use-package flycheck
+(use-package flycheck
   :config (global-flycheck-mode))
 
 ;;;;;;;;;
 ;; react
 
-(my-use-package rjsx-mode)
+(use-package rjsx-mode)
 
-(my-use-package tide
+(use-package tide
   :after (typescript-mode company flycheck)
   :hook ((typescript-mode . tide-setup)
          (typescript-mode . tide-hl-identifier-mode)
@@ -145,17 +140,16 @@
 
 ;;
 
-(my-use-package cuda-mode)
+(use-package cuda-mode)
 
-(my-use-package google-c-style)
+(use-package google-c-style)
 
-(my-use-package swift-mode)
+(use-package swift-mode)
 
-(my-use-package scad-mode)
+(use-package scad-mode)
 
-(my-use-package mise
- :config
- (global-mise-mode))
+(use-package mise
+  :config (global-mise-mode))
 
 
 (elpaca-wait)
